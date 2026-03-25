@@ -1,3 +1,7 @@
+# Coasting
+
+Tooling for creating custom coasters by segmenting images.
+
 ## Running
 
 ```sh

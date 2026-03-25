@@ -1,0 +1,14 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+h1 {
+  color: #ff3e00;
+  margin-bottom: 2rem;
+}

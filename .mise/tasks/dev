@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#MISE alias="dev"
+set -e
+
+cleanup() {
+  kill $backend_pid 2>/dev/null
+  exit
+}
+
+trap cleanup INT TERM
+
+(
+  cd backend
+  uv run python scripts/run_server.py
+) &
+
+backend_pid=$!
+
+(
+  cd frontend
+  npm run dev
+)

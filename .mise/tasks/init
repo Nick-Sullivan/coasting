@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#MISE description="Install dependencies"
+#MISE alias="init"
+set -e
+echo "Installing the backend dependencies..."
+(
+  cd backend
+  uv venv --allow-existing
+  uv sync
+  uv pip install -e .
+)
+echo "Installing the frontend dependencies..."
+(
+  cd frontend
+  npm install
+)

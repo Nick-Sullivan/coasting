@@ -1,0 +1,18 @@
+.image-loader {
+  margin: 1rem 0;
+}
+
+.image-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}

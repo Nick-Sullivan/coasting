@@ -1,0 +1,86 @@
+.dominant-color-selector-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.dominant-color-selector-canvas.seed-mode {
+  pointer-events: all;
+  cursor: crosshair;
+}
+
+.dominant-color-selector-canvas.move-mode {
+  pointer-events: all;
+  cursor: grab;
+}
+
+.dominant-color-selector-canvas.move-mode:active {
+  cursor: grabbing;
+}
+
+.dominant-color-selector-controls {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  pointer-events: all;
+  user-select: none;
+}
+
+.dominant-color-selector-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.dominant-color-selector-controls input[type="range"] {
+  width: 120px;
+  accent-color: #2563eb;
+}
+
+.dominant-color-swatch-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dominant-color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  flex-shrink: 0;
+}
+
+.move-toggle {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.move-toggle:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.move-toggle.active {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.move-toggle.active:hover {
+  background: #1d4ed8;
+}

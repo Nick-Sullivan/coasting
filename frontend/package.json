@@ -1,0 +1,28 @@
+{
+  "name": "coasting",
+  "version": "1.0.0",
+  "description": "A project for splitting an image to print on stackable coasters",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "format": "prettier --write .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "prettier-plugin-packagejson": "^3.0.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}

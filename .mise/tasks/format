@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#MISE description="Format frontend and backend code"
+set -e
+
+(
+  cd frontend
+  npm run format
+)
+
+(
+  cd backend
+  uv run ruff format .
+)
